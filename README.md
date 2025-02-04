@@ -9,3 +9,14 @@
 1. Install Wrangler
    ```sh
    npm install -g wrangler
+
+
+cloudflare-chatbot/
+├── wrangler.toml
+├── package.json
+├── src/
+│   ├── index.js
+│   ├── chat.js
+│   ├── websocket.js
+│   ├── rate-limit.js
+└── README.md
