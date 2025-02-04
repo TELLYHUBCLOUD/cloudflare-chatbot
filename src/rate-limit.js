@@ -1,5 +1,6 @@
-const SUPABASE_URL = "https://your-supabase-url.supabase.co";
-const SUPABASE_KEY = "your-anon-key";
+const SUPABASE_URL = "https://eonecuxctrpgrdxmwiei.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVvbmVjdXhjdHJwZ3JkeG13aWVpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzcyNjUyMDEsImV4cCI6MjA1Mjg0MTIwMX0.XjliTqufiXcV5j02dKMt9hw7taZQ9JOe6dIrVbFgLXY";
+
 
 export async function isRateLimited(userId) {
   const response = await fetch(`${SUPABASE_URL}/rest/v1/ratelimit?user_id=eq.${userId}`, {
